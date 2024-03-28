@@ -1,0 +1,86 @@
+:root {
+    --dark-purple:rgb(67, 25, 105);
+    --light-purple:rgb(213, 179, 243);
+    --font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(229, 228, 230); 
+}
+
+.ProfileCard {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px; 
+}
+.nightMode {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    width: 30px; 
+    height: auto; 
+    transition: transform 0.3s ease;
+}
+.nightMode:hover {
+    transform: scale(1.1);
+}
+.profile {
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block; 
+    transition: transform 0.3s ease;
+}
+.profile:hover {
+    transform: scale(1.1);
+}
+.links {
+    list-style-type: none; 
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--dark-purple);
+    font-weight: bold;
+    font-size: 16px;
+}
+.links li {
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+.links li:hover {
+    background-color: var(--light-purple);
+    transform: scaleX(1.1); 
+}
+.green{
+    color: blueviolet;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+P{
+    font-size: 16px;
+}
+.night-mode{
+    background-color: #272727;
+}
+.night-mode .ProfileCard{
+    background-color: #333131; 
+    color: #fff;
+}
+.night-mode .links a {
+    color:var(--light-purple)
+}
