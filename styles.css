@@ -84,3 +84,6 @@ P{
 .night-mode .links a {
     color:var(--light-purple)
 }
+.night-mode .links li:hover {
+    background-color: var(--dark-purple);
+}
